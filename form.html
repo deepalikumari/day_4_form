@@ -1,0 +1,69 @@
+<!-- Build your First Form, students can deside on the theme.
+
+Challenge 1: Use the text input to get the user name 
+Challenge 2: Use lable in appropriate places
+Challenge 3: use different form input elements
+Challenge 4: When the form is submitted, get the user's response and add the same to the body of the mail with your email id in the "to" section.
+-->
+
+<!-- your code goes below this comment -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Form</title>
+  </head>
+  <style>
+    form {
+      background-color: lightblue;
+      font-family: Arial;
+      border: 1px solid #fff; /* Changed border color to solid white */
+      padding: 20px; /* Added padding for better spacing */
+      max-width: 400px; /* Added max-width to limit the width of the form */
+      margin: 0 auto; /* Center the form horizontally */
+    }
+  </style>
+  <body>
+    <form action="deepali_kumari@srmap.edu.in" method="POST">
+      <div>
+        <label for="username">Enter your name</label><br />
+        <input type="text" id="username" name="username" />
+      </div>
+      <div>
+        <label for="email">Enter your email id</label><br />
+        <input type="email" id="email" name="email" />
+      </div>
+      <div>
+        <label for="gender">Select your gender</label><br />
+        <select id="gender" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <br /><br />
+        </select>
+      </div>
+      <div>
+        <label for="age">Enter age</label><br />
+        <input
+          type="number"
+          id="age"
+          name="age"
+          min="18"
+          max="100"
+        /><br /><br />
+      </div>
+      <div>
+        <label for="message">Enter some message</label><br />
+        <textarea
+          id="text"
+          id="message"
+          name="message"
+          rows="4"
+          cols="50"
+        ></textarea
+        ><br /><br />
+      </div>
+    </form>
+  </body>
+</html>
